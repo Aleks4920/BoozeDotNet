@@ -1,0 +1,14 @@
+﻿@model IEnumerable<BoozeDotNet.Models.Product>
+@{
+    ViewData["Title"] = "Shop by Category";
+}
+
+<a class="btn btn-primary" href="javascript:history.go(-1)">Back to Shop</a>
+
+<h1>You are shopping for @ViewBag.CategoryName </h1>
+<ul>
+@foreach(var product in Model){
+    <li>@product.Name</li>
+}
+</ul>
+

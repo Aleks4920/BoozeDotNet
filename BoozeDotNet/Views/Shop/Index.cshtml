@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Shop";
+}
+
+
+<h1>Shop</h1>
+<ul>
+    <li>
+        <a asp-controller="Shop" asp-action="Category" asp-route-CategoryName="Beer">Beer</a>
+    </li>
+    <li>
+        <a asp-controller="Shop" asp-action="Category" asp-route-CategoryName="Wine">Wine</a>
+    </li>
+    <li>
+        <a asp-controller="Shop" asp-action="Category" asp-route-CategoryName="Spirits ">Spirits</a>
+    </li>
+</ul>
+
+
